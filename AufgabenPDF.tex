@@ -51,7 +51,7 @@
 \pagebreak
 
 \section*{Aufgabe 4}
-Sei $m_i$eine Menge, so geeben Sie jeweils die Elemente der Mengen M3, M17 und M42 an.\\\\
+Sei $m_i$ eine Menge, so geeben Sie jeweils die Elemente der Mengen M3, M17 und M42 an.\\\\
 	1. $ i \in M$\\
 	2. $m \in M \land m\: \textit{\textbf{ungerade}} \Rightarrow (3m+1) \in M$\\
 	3. $m \in M \land m\: \textit{\textbf{gerade}} \Rightarrow (\frac{m}{2}) \in M$
@@ -68,14 +68,31 @@ Sei $m_i$eine Menge, so geeben Sie jeweils die Elemente der Mengen M3, M17 und M
 		\begin{align*}
 			\varnothing &= \varnothing \quad \textit{Wahr}\\
 			\varnothing &\subseteq \varnothing \quad \textit{Wahr}\\
-			\varnothing &\subsetneq \varnothing \quad \textit{Wahr}\\
-			\varnothing &\in \varnothing \quad \textit{Wahr}\\
+			\varnothing &\subsetneq \varnothing \quad \textit{Falsch}\\
+			\varnothing &\in \varnothing \quad \textit{Falsch}\\
 			\varnothing &\subseteq \left\{\varnothing\right\} \quad \textit{Wahr}\\
-			\varnothing &\subsetneq \left\{\varnothing\right\} \quad \textit{Wahr}\\
+			\varnothing &\subsetneq \left\{\varnothing\right\} \quad \textit{??}\\
 		\end{align*}
 \pagebreak
 
 \section*{Aufgabe 6}
+
+\subsection*{a)}
+$(A \cap B^C)^C$ (Regeln von de Morgan)\\
+$= A^C \cup (B^C)^C$ (Involution)\\
+$= A^C \cup B$\\
+
+\subsection*{b)}
+$(((A\cap B) \cup C)^C \cap B^C)^C$ (Regeln von de Morgan)\\
+$= (((A\cap B)\cup C)^C)^C \cup (B^C)^C$ (Involution)\\
+$= ((A\cap B)\cup C) \cup B$ (Assoziativgesetz)\\
+$= (A\cap B) \cup (C \cup B)$ (Kommutativgesetz)\\
+$= (B\cap A) \cup (B \cup C) $ (Assoziativgesetz)\\
+$= (B\cap A)\cup B) \cup C$  (Kommutativgesetz)\\
+$= (B\cup (B\cap A))\cup C$ (Absorptionsgesetz)\\
+$= B \cup A$
+
+
 
 \pagebreak
 
