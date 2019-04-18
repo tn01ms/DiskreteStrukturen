@@ -75,17 +75,33 @@
 
 \section*{Aufgabe 1}
 
-Geben Sie eine induktive Definition der Tiefe eines Baums an.\\\\\\
+Geben Sie eine induktive Definition der Tiefe eines Baums an.\\
+$T_W$ := \text{Die Tiefe des Baumes mit der Wurzel} $_W$
+
+	\begin{align*}
+		T_W =
+		\begin{cases}
+			\text{Keine verbundenen Unterknoten} &: 0\\
+			\text{Sonst} &: max(T_{W_1}, T_{W_2}, ..., T_{W_k}) + 1
+		\end{cases}
+	\end{align*}\\
 
 \section*{Aufgabe 2}
 	 Geben Sie eine induktive Definition für arithmetische Ausdrücke mit Multiplikation und Addition (einschließlich Klammersetzung) für die natürlichen Zahlen an.\\
 	 	\begin{align*}
 		 	a, b_n \in \mathbb{N}, a = 0, b_1 = 1, b_n = n*(a+b_1)
-	 	\end{align*}\\\\\\
+	 	\end{align*}\\
+	 	
+\pagebreak
 
 \section*{Aufgabe 3}
-	
-\pagebreak
+Vorrechnen! Definieren Sie induktiv die Menge der (Nummern der) Stufen, die der Briefträger auf seinem Weg nach oben auf dieser Treppe erreichen kann.\\
+S sei die Menge der erreichbaren Stufen
+\begin{itemize}
+	\item $1 \in S$
+	\item $\forall s \in S, s+2 \le 60 : s + 2 \in S$
+	\item $\forall s \in S, s+3 \le 60 : s + 3 \in S$
+\end{itemize}
 
 \section*{Aufgabe 4} Vorrechnen!
 Sei $M_i$ eine Menge, wobei  so geben Sie jeweils die Elemente der Mengen $M_3$, $M_{17}$ und $M_{42}$ an.\\\\
@@ -96,7 +112,7 @@ Sei $M_i$ eine Menge, wobei  so geben Sie jeweils die Elemente der Mengen $M_3$,
 			M_3 &=: \left\{1,2,3,4,5,8,10,16\right\}\\
 			M_{17} &=: \left\{1,2,4,5,8,10,13,16,17,20,26,40,52\right\}\\
 			M_{42} &=: \left\{1,2,4,8,16,21,32,42,64\right\}
-		\end{align*}\\\\\\
+		\end{align*}
 		
 		
 \section*{Aufgabe 5} Vorrechnen!
@@ -108,9 +124,11 @@ Sei $M_i$ eine Menge, wobei  so geben Sie jeweils die Elemente der Mengen $M_3$,
 			\varnothing &\in \varnothing \quad \textit{Falsch}\\
 			\varnothing &\subseteq \left\{\varnothing\right\} \quad \textit{Wahr}\\
 			\varnothing &\subsetneq \left\{\varnothing\right\} \quad \textit{Wahr}\\
-		\end{align*}\\\\
+		\end{align*}
+		
+\pagebreak
 
-\section*{Aufgabe 6} Vorrechnen
+\section*{Aufgabe 6} Vorrechnen!
 
 \subsection*{a)}
 $(A \cap B^C)^C$ (Regeln von de Morgan)\\
@@ -126,10 +144,6 @@ $= (B\cap A) \cup (B \cup C) $ (Assoziativgesetz)\\
 $= ((B\cap A)\cup B) \cup C$  (Kommutativgesetz)\\
 $= (B\cup (B\cap A))\cup C$ (Absorptionsgesetz)\\
 $= B \cup C$
-
-
-
-\pagebreak
 
 
 
