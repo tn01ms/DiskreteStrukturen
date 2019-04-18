@@ -88,14 +88,18 @@ $T_W$ := \text{Die Tiefe des Baumes mit der Wurzel} $_W$
 	\end{align*}\\
 
 \section*{Aufgabe 2}
-	 Geben Sie eine induktive Definition für arithmetische Ausdrücke mit Multiplikation und Addition (einschließlich Klammersetzung) für die natürlichen Zahlen an. Wir verwenden dafür eine EBNF, die Erweiterte-Backus-Nauer Form.
-		\begin{itemize}
-			\item <Term>::=$\left\{K_L\right\}<Zahl><Operator><Term>\left\{K_R\right\}<Operator>\\<Term>|\epsilon$
-			\item $<K_L>::=($
-			\item $<K_R>::=)$
-			\item <Zahl1>::=$1,2,3,4,5,6,7,8,9,0, <Zahl>|\epsilon$
-			\item <Operator>::=$+,-,*,/ \; |\epsilon$
-		\end{itemize}
+	 Geben Sie eine induktive Definition für arithmetische Ausdrücke mit Multiplikation und Addition (einschließlich Klammersetzung) für die natürlichen Zahlen an. Wir verwenden dafür eine EBNF. (Erweiterte-Backus-Naur Form)\\
+	 
+
+<Ausdruck> ::= (<Ausdruck>) | <Ausdruck> $\cdot$ <Ausdruck> |\\ 
+ \hspace*{31mm}<Ausdruck> + <Ausdruck> | <NatürlicheZahl> \\
+
+<NatürlicheZahl>::= <ZifferOhneNull>(Ziffer)$^*$\\
+
+<ZifferOhneNull> ::= 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9\\
+
+<Ziffer> ::= 0 | <ZifferOhneNull>
+
 	 	
 \pagebreak%{)}
 
