@@ -89,6 +89,7 @@
 			\item[b)] Zu zeigen: $\forall x \in \mathbb{R} : x^2 - 4x + 5 > 0$\\
 			Mit binomischer Formel: $x^2 - 4x + 5 > 0 \Leftrightarrow (x - 2)^2 + 1 > 0$\\\\
 			Da jede quadrierte Zahl $\ge 0$ ist und $1 > 0$ ist der Beweis trivial.
+\pagebreak
 			
 			\item[c)]
 			Beweis überdeckende Fallunterscheidung:\\
@@ -117,43 +118,42 @@
 				$n=26 \Rightarrow 26*27*28 = 2*13*9*3*7*4$
 				Diese Multiplikation enthält die Faktoren 2,3,4 wie bei $n=2$
 		\end{itemize}
-	\newpage
+\pagebreak
+\section*{Aufgabe 8}
+	\begin{itemize}
+		\item[a)] Fallunterscheidung:\\
+		Fall 1 (von x und y ist eine Zahl gerade):
+		\begin{center}
+			$(2m + 1) * 2n = 4mn + 2n = 2*(2mn + n) = z $\\$\Rightarrow$ z gerade da $2|2*(2mn + n)$
+		\end{center}
+		Fall " (von x und y beide gerade):
+		\begin{center}
+			$2m * 2n = 2*(2mn) = z \Rightarrow$ z gerade da $2|2*(2mn)$
+		\end{center}
 	
-	\section*{Aufgabe 8}
-		\begin{itemize}
-			\item[a)] Fallunterscheidung:\\
-			Fall 1 (von x und y ist eine Zahl gerade):
-			\begin{center}
-				$(2m + 1) * 2n = 4mn + 2n = 2*(2mn + n) = z $\\$\Rightarrow$ z gerade da $2|2*(2mn + n)$
-			\end{center}
-			Fall " (von x und y beide gerade):
-			\begin{center}
-				$2m * 2n = 2*(2mn) = z \Rightarrow$ z gerade da $2|2*(2mn)$
-			\end{center}
+		\item[b)]
+		\textbf{Annahme:} Wenn eine Gerade a zwei verschiedene andere Geraden b und c so schneidet, dass die Wechselwinkel
+		$\phi$ und $\epsilon$ gleich sind, so haben b und c keinen echten Schnittpunkt.
 		
-			\item[b)]
-			\textbf{Annahme:} Wenn eine Gerade a zwei verschiedene andere Geraden b und c so schneidet, dass die Wechselwinkel
-			$\phi$ und $\epsilon$ gleich sind, so haben b und c keinen echten Schnittpunkt.
-			
-			\textbf{Beweis:} (durch Widerspruch)\\
-			\textbf{Annahme:} Die Geraden sind nicht parallel.\\
-			
-			$\Rightarrow$ Dann treffen sich die Geraden c un b irgendwo, sodass zusammen mit der Geraden a ein Dreieck entsteht.\\
-			
-			Die Innenwinkel eines Dreiecks ergeben in der Summe $180^\circ$.\\
-			
-			Ein Winkel des Dreiecks ist bekannt: $\phi$ oder $\epsilon$ (die gleich sind). Im folgenden Beweis betrachten wir $\epsilon$ als den Winkel, der in unserem Dreieck liegt.\\
-			Ein zweiter Winkel ist $180^\circ - \phi$ (nach dem Nebenwinkelsatz).\\ $180^\circ - \phi = 180^\circ - \epsilon$ (Da $\phi$ = $\epsilon$).\\
-			
-			Sei $\gamma$ der dritte Winkel. Dieser ergibt sich aus $180^\circ$ minus die beiden anderen Winkel:\\
-			$\Rightarrow \gamma = 180^\circ - \epsilon - (180^\circ - \epsilon) $ \\
-			$\Leftrightarrow \gamma = 0^\circ$\\
-			
-			Dies ist ein Widerspruch, da in einem Dreieck kein Winkel $0^\circ$ haben kann. Also gilt die ursprüngliche Annahme und die Geraden müssen parallel sein.
-			\hfil$\Box$
-		\end{itemize}
-	\pagebreak
-	\section*{Aufgabe 9}
+		\textbf{Beweis:} (durch Widerspruch)\\
+		\textbf{Annahme:} Die Geraden sind nicht parallel.\\
+		
+		$\Rightarrow$ Dann treffen sich die Geraden c un b irgendwo, sodass zusammen mit der Geraden a ein Dreieck entsteht.\\
+		
+		Die Innenwinkel eines Dreiecks ergeben in der Summe $180^\circ$.\\
+		
+		Ein Winkel des Dreiecks ist bekannt: $\phi$ oder $\epsilon$ (die gleich sind). Im folgenden Beweis betrachten wir $\epsilon$ als den Winkel, der in unserem Dreieck liegt.\\
+		Ein zweiter Winkel ist $180^\circ - \phi$ (nach dem Nebenwinkelsatz).\\ $180^\circ - \phi = 180^\circ - \epsilon$ (Da $\phi$ = $\epsilon$).\\
+		
+		Sei $\gamma$ der dritte Winkel. Dieser ergibt sich aus $180^\circ$ minus die beiden anderen Winkel:\\
+		$\Rightarrow \gamma = 180^\circ - \epsilon - (180^\circ - \epsilon) $ \\
+		$\Leftrightarrow \gamma = 0^\circ$\\
+		
+		Dies ist ein Widerspruch, da in einem Dreieck kein Winkel $0^\circ$ haben kann. Also gilt die ursprüngliche Annahme und die Geraden müssen parallel sein.
+		\hfil$\Box$
+	\end{itemize}
+\pagebreak
+\section*{Aufgabe 9}
 	\textit{Vorrechnen!}
 		\begin{itemize}
 			\item[a)] Im Induktionsschritt wird angenommen dass $a=0$ und $b=0$ sind um den Induktionsanfang zu verwenden.
@@ -178,6 +178,7 @@
 			\end{align*}
 		\end{itemize}
 	
+\pagebreak
 \section*{Aufgabe 10}
 
 \textbf{Annahme:} Jede natürliche Zahl aus $\mathbb{N}_0\backslash{0}$, die aus $3^n, n \in \mathbb{N}_0 $, identischen Ziffern besteht ist ganzzahlig ohne Rest durch $3^n$ teilbar.\\
@@ -217,8 +218,6 @@ I.S. $n \to n+1$\\
 $Q(z, n+1) = Q(z, n) + 3z \overset{\text{\tiny{IV}}}{\equiv} 0$ (mod $3^n \cdot 3 = 3^{n+1}$) \\
 Da 3z mod 3 = 0 (siehe Hilfsbeweis).
 \hfill$\Box$
-
-
 
 
 
