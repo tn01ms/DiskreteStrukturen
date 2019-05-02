@@ -117,7 +117,7 @@
 				$n=26 \Rightarrow 26*27*28 = 2*13*9*3*7*4$
 				Diese Multiplikation enthält die Faktoren 2,3,4 wie bei $n=2$
 		\end{itemize}
-	
+	\newpage
 	
 	\section*{Aufgabe 8}
 		\begin{itemize}
@@ -130,8 +130,28 @@
 			\begin{center}
 				$2m * 2n = 2*(2mn) = z \Rightarrow$ z gerade da $2|2*(2mn)$
 			\end{center}
+		
+			\item[b)]
+			\textbf{Annahme:} Wenn eine Gerade a zwei verschiedene andere Geraden b und c so schneidet, dass die Wechselwinkel
+			$\phi$ und $\epsilon$ gleich sind, so haben b und c keinen echten Schnittpunkt.
+			
+			\textbf{Beweis:} (durch Widerspruch)\\
+			\textbf{Annahme:} Die Geraden sind nicht parallel.\\
+			
+			$\Rightarrow$ Dann treffen sich die Geraden c un b irgendwo, sodass zusammen mit der Geraden a ein Dreieck entsteht.\\
+			
+			Die Innenwinkel eines Dreiecks ergeben in der Summe $180^\circ$.\\
+			
+			Ein Winkel des Dreiecks ist bekannt: $\phi$ oder $\epsilon$ (die gleich sind). Im folgenden Beweis betrachten wir $\epsilon$ als den Winkel, der in unserem Dreieck liegt.\\
+			Ein zweiter Winkel ist $180^\circ - \phi$ (nach dem Nebenwinkelsatz).\\ $180^\circ - \phi = 180^\circ - \epsilon$ (Da $\phi$ = $\epsilon$).\\
+			
+			Sei $\gamma$ der dritte Winkel. Dieser ergibt sich aus $180^\circ$ minus die beiden anderen Winkel:\\
+			$\Rightarrow \gamma = 180^\circ - \epsilon - (180^\circ - \epsilon) $ \\
+			$\Leftrightarrow \gamma = 0^\circ$\\
+			
+			Dies ist ein Widerspruch, da in einem Dreieck kein Winkel $0^\circ$ haben kann. Also gilt die ursprüngliche Annahme und die Geraden müssen parallel sein.
+			\hfil$\Box$
 		\end{itemize}
-	
 	\pagebreak
 	\section*{Aufgabe 9}
 	\textit{Vorrechnen!}
@@ -158,6 +178,49 @@
 			\end{align*}
 		\end{itemize}
 	
+\section*{Aufgabe 10}
+
+\textbf{Annahme:} Jede natürliche Zahl aus $\mathbb{N}_0\backslash{0}$, die aus $3^n, n \in \mathbb{N}_0 $, identischen Ziffern besteht ist ganzzahlig ohne Rest durch $3^n$ teilbar.\\
+
+\textbf{Beweis:}
+
+Hilfsannahme: Jede Zahl deren Quersumme durch 3 teilbar ist, ist auch durch 3 teilbar.\\
+Hilfsbeweis:  (direkt)\\
+Eine Zahl z kann man folgendermaßen schreiben:\\ 
+$z = a_n \cdot 10^n + a_{n-1} \cdot 10^{n-1} + ... + a_0 \cdot 10^0$\\
+
+Die Quersumme dieser Zahl $Q(z)$, kann man entsprechend so schreiben:\\
+$Q(z) = a_n + a_{n-1} + ... + a_0$\\
+
+Des Weiteren gilt: $10^i \equiv 1^i \equiv 1$ (mod 3)\\
+
+Nun betrachten wir z mod 3:\\
+
+$z \equiv a_n \cdot 1^n + a_{n-1} \cdot 1^{n-1} + ... + a_0 \cdot 1^0$ (mod 3)\\
+$\equiv a_n + a_{n-1} + ... + a_0 \equiv Q(z)$ (mod 3) \\
+
+Also gilt $z \equiv Q(z)$ (mod 3). Wenn Q(z) mod 3 = 0 ($\Rightarrow$ Q(z) durch drei teilbar) ist damit auch z durch 3 teilbar.
+\hfill$\Box$\\
+
+Hauptbeweis: (Induktion)\\
+
+Q(z,n) sei die Quersumme von einer Zahl, die aus $3^n$ mal der Ziffer z bestehlt.\\
+
+I.A.: n = 0\\
+
+Q(z,0) mod $3^0$ = z mod 1 = 0 \\
+
+I.V. Es gelte für ein festes aber beliebiges $n \in \mathbb{N}$: Q(z,n) mod $3^n$ = 0\\
+
+I.S. $n \to n+1$\\
+
+$Q(z, n+1) = Q(z, n) + 3z \overset{\text{\tiny{IV}}}{\equiv} 0$ (mod $3^n \cdot 3 = 3^{n+1}$) \\
+Da 3z mod 3 = 0 (siehe Hilfsbeweis).
+\hfill$\Box$
+
+
+
+
 
 \pagebreak
 	\section*{Aufgabe 11}
