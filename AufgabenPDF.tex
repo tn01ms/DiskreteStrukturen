@@ -158,7 +158,50 @@ Menge M, $|M| = n, R, R_1, R_2 $ Relationen auf M\\
 		Da M n Elemente hat muss damit R mindestens auch n Elemente haben, also folgt:\\
 		$n \le |R| \le n^2$
 \end{itemize}
-
+\section*{Aufgabe 14}
+Vorrechnen a-d\\
+	Folgende Definitionen seien gegeben: siehe Aufgaben Blatt 3\\
+	\begin{itemize}
+		\item [a)] Geben Sie für $M = \{a,b,c,d\}$ und $R_1=\{(a,b),(a,c)\} \subseteq M \times M$, sowie\\ $R_2=\{(b,d),(c,a)\} \subseteq M \times M$ die Kompositionen $R_{2}^{-1} \circ R_{1}^{-1}$ und $R_{1}^{-1} \circ R_{2}^{-1}$ an.
+			\begin{itemize}
+				\item 1. Aus Def 2,1 $\Rightarrow R_{2}^{-1} \circ R_{1}^{-1} =\{((d,b),(b,a)),((a,c),(c,a))\}$
+				\item 2. Aus Def 2,1 $\Rightarrow R_{1}^{-1} \circ R_{2}^{-1} =\{((b.a),(a,c)),((c,a),(a,c))\}$
+			\end{itemize}
+		\pagebreak
+		\item [b)] Beweisen Sie, dass für eine Menge M und eine linkstotale, linkseindeutige Relation $R \subseteq M \times M$ gilt:\\ 
+		$R \circ R^{-1} = I_M$
+			\begin{itemize}
+				\item Beweis:\\
+				-Linkstotal:$\forall a \in A: \exists b \in B: (a,b) \in R$\\
+				-Linkseindeutig:$\forall a,c \in A ,b \in B: ((a,b) \in R \wedge (c,b)\in R) \Rightarrow a=c$\\
+				Annahme: Sei die Menge $M=\{x_1,...,x_n\}$ und die Menge $N=\{y_1,...,y_n\}$, sowie $M=N$(aus gründen der Beschriftung) und die Relation $R=\{(x_1,y_1),...,(x_n,y_n)\}$ (folgt aus der Aufgabenstellung), so folgt aus der Def.2 das $R^{-1}=\{(y_1,x_1),...,(y_n,x_n)\}$, womit mit Def.1 folgt das $R \circ R^{-1} = \{(x_1,x_1),...,(x_n,x_n)\}$ was laut Def.3 das gleiche ist wie $I_M$		
+			\end{itemize}
+		\item [c)] Unter welcher Annahme gilt für eine Menge M und eine Relation $R \subseteq M \times M$ gilt:\\
+		 $R^{-1} \circ R = I_M$
+		 	    \begin{itemize}
+		 	    	\item 1. Annahme:R muss Rechtstotal und Rechtseindeutig sein
+		 	    	\item 2. Beweis: siehe (b)
+		 	    \end{itemize}
+	 	\item [d)] Beweisen Sie, dass für eine Menge M und Relationen $R_1, R_2 \subseteq M \times M$ gilt:\\
+	 	$(R_1 \circ R_2)^{-1} = R_{2}^{-1} \circ R_{1}^{-1}$
+	 		\begin{itemize}
+	 			\item Beweis:\\
+	 				Sei die Menge $M=\{x_1,...,x_n\}$ und die Menge $N=\{y_1,...,y_n\}$, sowie\\ $M=N$(aus gründen der Beschriftung) und die Relationen $R_1,R_2 \subseteq M \times N$, so wir angenommen:\\ 
+	 				$R_1=\{(x_1,y_1),...,(x_n,y_n)\}$, außerdem ist $R_1$ Linkstotal und linkseindeutig\\
+	 				$R_2=R^{-1}$\\
+	 				$R^{-1}=\{(y_1,x_1),...,(y_n,x_n)\}$\\
+	 				$R_{2}^{-1}= R_1$\\
+	 				\begin{itemize}
+	 					\item 1. Aus der Annahme folgt, dass $(R_1 \circ R_2)^{-1} = (R_1 \circ R_1^{-1})^{-1}$ aus b) folgt nun $(R_1 \circ R_1^{-1})^{-1}=(I_M)^{-1}$ was das gleiche ist wie $I_M$.
+	 					\item 2 Aus der Annahme folgt, das $R_{2}^{-1} \circ R_{1}^{-1}=R_1 \circ R_1^{-1}$, womit wiederum aus b) folgt $R_1 \circ R_1^{-1} = I_M$
+	 				\end{itemize}
+	 		\end{itemize}
+	 	\item [e)] Beweisen oder widerlegen  Sie durch Angabe eines Gegenbeispiels die folgende Aussage:\\
+	 	Für eine reflexive Relation $R_1$ und $R_2$ ist die Relation $R_1 \circ R2$ reflexiv.
+	 		\begin{itemize}
+	 			\item 
+	 		\end{itemize}
+	\end{itemize}
 
 
 
