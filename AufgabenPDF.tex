@@ -72,8 +72,34 @@
 \begin{document}
 \maketitle
 \hrulefill
+\section*{Aufgabe 12:}
 
+Sei M eine Menge mit zehn paarweise verschiedenen zweistelligen Zahlen.\\
 
+Zu Zeigen: Es gibt zwei nicht-leere disjunkte Teilmengen $M_1$ und $M_2$ von M, sodass die Summer der Elemente in $M_1$ und $M_2$ gleich ist.\\
+
+Beweis: (Schubladenprinzip)\\
+
+Wenn man M in zwei nicht-leere Teilmengen aufteilt, so kann jede dieser Teilmengen maximal 9 Elemente enthalten.\\
+
+Die kleinste Zahl, die man mit so einer Teilmenge darstellen kann ist die 10.\\
+
+Die größte Zahl, die man darstellen kann, bildet sich aus einer Menge von 9 Elementen:\\
+$91+92+93+94+95+96+97+98+99 = 855$\\
+
+Es gibt also 855 - 10 = 845 verschiedene Zahlen, die dargestellt werden können.\\
+
+Nun betrachtet man die Anzahl der Kombinationen, die es gibt um eine Teilmenge von M zu bilden:\\
+
+Um eine Menge mit einem Element zu bilden, gibt es 10 Möglichkeiten.\\
+Um eine Menge mit  zwei Elementen zu bilden, gibt es $\binom{10}{2} = 45$ Möglichkeiten.\\
+
+Um eine Menge mit 1,2,3,4,5,6,7,8 oder 9 Elementen zu bilden, gibt es also folgendermaßen viele Möglichkeiten:\\
+
+$\binom{10}{1} + \binom{10}{2} +\binom{10}{3} +\binom{10}{4} + \binom{10}{5} +\binom{10}{6} +\binom{10}{7} + \binom{10}{8} +\binom{10}{9} = 1022$\\
+
+Man sieht also, dass es mehr Möglichkeiten gibt eine Teilmenge von M (mit 1-9 Elementen) zu bilden, als es mögliche Summen der einzelnen Elemente gibt. Demnach muss es Summen geben, die mehrfach vorkommen.\\
+\hfil$\Box$
 \section*{Aufgabe 13:}
 
 Menge M, $|M| = n, R, R_1, R_2 $ Relationen auf M\\
