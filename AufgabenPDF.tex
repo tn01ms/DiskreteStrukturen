@@ -128,8 +128,30 @@ Menge M, $|M| = n, R, R_1, R_2 $ Relationen auf M\\
 				$\forall m,n \in R_2 $ gilt die Symmetrie nicht, da $(a,c) \in R_2$ aber $(c,a) \notin R_2 $\\
 				
 				Also folgt aus 	$R_1 $ symmetrisch nicht, dass auch $R_2$ symmetrisch.
-				\item[iii)]
+			\item[iii)]
+				$R_1$ antisymmetrisch $\Rightarrow R_2$ antisymmetrisch.\\
+				$\forall m,n \in R_1 : (m,n) \in R_1 \wedge (n,m) \in R_1 \Rightarrow m = n$\\
+				Gegenbeispiel:\\
+				$M := \{a,b,c\}$\\
+				$R_1 := \{(a,b),(b,a)\}$\\
+				$R_2 := \{(a,b),(b,a),(a,c),(c,a)\}$\\\\
+				$\forall m,n \in R_2 $ gilt die Antisymmetrie nicht zwingend, da wir keine Aussage über $ c = a $ treffen können.
+			\item[iv)]
+				$\forall m,n,o \in R_1 : (m,n) \in R_1 \wedge (n,o) \in R_1 \Rightarrow (m,o) \in R_1$\\
+				Gegenbeispiel:\\
+				$M := \{a,b,c,d,e,f\}$\\
+				$R_1 := \{(a,b),(b,c),(a,c)\}$\\
+				$R_2 := \{(a,b),(b,c),(a,c),(d,e),(e,f))\}$\\
+				$\Rightarrow \forall m,n,o \in R_1 : (m,n) \in R_1 \wedge (n,o) \in R_1 \Rightarrow (m,o) \in R_1$\\
+				$R_2$ ist nicht transitiv, da $(d,e), (e,f) \in R_2 $ aber $(d,f)) \notin R_2$\\
 		\end{itemize}
+	\item[c)]
+		$R$ ist eine Äquivalenzrelation $\Rightarrow R$ ist reflexiv, symmetrisch, transitiv\\
+		Zu zeigen: $n \le |R| \le n^2$\\
+		$M \times M $ hat $n^2$ Elemente.\\ Da $R \le M \times M$, kann $|R|$ maximal $n^2$ Elemente haben.\\\\
+		Reflexivität von $R \Rightarrow \forall m \in M : (m,m) \in R$\\
+		Da M n Elemente hat muss damit R mindestens auch n Elemente haben, also folgt:\\
+		$n \le |R| \le n^2$
 \end{itemize}
 
 
