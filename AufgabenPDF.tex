@@ -70,6 +70,69 @@
 
 
 \begin{document}
-	\maketitle
-	\hrulefill
+\maketitle
+\hrulefill
+
+
+\section*{Aufgabe 13:}
+
+Menge M, $|M| = n, R, R_1, R_2 $ Relationen auf M\\
+
+\begin{itemize}
+	\item[a)]
+		$\rightarrow |R| \ge n \Rightarrow $ R reflexiv\\
+		$M := \{a,b\} \Rightarrow |M| = n = 2$\\
+		$M \times M = \{(a,a),(a,b),(b,a),(b,b)\}$\\
+		Da $|R| \ge n$ folgt, da $n = 2$, dass $|R| \ge 2$\\
+		Da $R \subseteq M \times M$ gilt z.B.: $R := \{(a,b),(b,a)\}$\\
+		Damit ist die Reflexivität nicht erfüllt, da $\forall m \in M : (m,m) \in R$.\\
+	\item[b)]
+		$R_1 \subseteq R_2$
+		\begin{itemize}
+			\item[i)]
+				$R_1$ reflexiv $\Rightarrow R_2 $ reflexiv\\
+				$\rightarrow \forall m \in M : (m,m) \in R_1$\\ Da $R_1 \subseteq R_2 \rightarrow \forall m \in M : (m,m) \in R_2$\\ Damit ist $R_2$ auch reflexiv.
+			\item[ii)]
+				$R_1 $ symmetrisch $\Rightarrow R_2 $ symmetrisch.\\
+				$\forall m,n \in M : (m,n) \in R_1 \Rightarrow (n,m) \in R_1$\\
+				Gegenbeispiel: $M := \{a,b,c\}$\\
+				$R_1 := \{(a,b),(b,a)\}$\\
+				$R_2 := \{(a,b),(b,a),(c,a)\}$\\
+				$\forall m,n \in R_1 : (m,n) \in R_1 \Rightarrow (n,m) \in R_1$\\
+				$\forall m,n \in R_2 $ gilt die Symmetrie nicht, da $(a,c) \in R_2$ aber $(c,a) \notin R_2 $\\
+				
+				Also folgt aus 	$R_1 $ symmetrisch nicht, dass auch $R_2$ symmetrisch.
+				\item[iii)]
+		\end{itemize}
+\end{itemize}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 \end{document}
