@@ -109,11 +109,61 @@
 	\begin{itemize}
 		\item Fall 2 : A abzählbar unendlich
 	\end{itemize}
-		Da A abzählbar unendlich und $B \subseteq A$  folgt das B maximal gleich A sein kann.\\
-		Angenommen B ist nicht abzählbar unendlich, würde das bedeuten das ein Teil von A nicht abzählbar unendlich ist da $B \subseteq A$, dies kann nicht sein da A per Definition abzählbar unendlich ist.\\\\
-		Falls B nun endlich ist der Beweis der Abzählbarkeit trivial.\\\\
-		Falls B nun nicht endlich:\\
-		Da A abzählbar unendlich und $B \subseteq A$  folgt das B unendlich und maximal gleich A sein kann. Sei $b_i \in B$ def. als das kleinste Element von B, dann bilden wir das erste Element von den natürlichen Zahlen $n_i \in \mathbb{N}_{0}$ auf dieses $b_i$ ab. Für das nächste Element aus B, $b_{i+1}$ nehmen wir den Nachfolger aus $\mathbb{N}_{0}\; n_{i+1}$.
+		Da A abzählbar unendlich folgt das B auch abzählbar unendlich sein muss. Wäre B nicht abzählbar unendlich wäre ein Teil von A nicht abzählbar unendlich was bedeuten würde das A nicht abzählbar unendlich sein kann.
+
+	
+	
+	\section*{Aufgabe 18}
+	
+	Sei $G = (S,\diamond)$ eine Gruppe mit neutralem Element $e$.\\
+	$a^{-1}$ sei das Inverse Element zum Element $a \in S$.\\
+	
+	\subsection*{a)}
+	\textbf{Behauptung:} $\forall a,b \in S$ gilt $ (a \diamond b)^{-1} = b^{-1} \diamond a^{-1}$\\
+	
+	\textbf{Beweis:}\\
+	$ (a \diamond b)^{-1} = b^{-1} \diamond a^{-1}$\\
+	$\Leftrightarrow (a \diamond b)^{-1} \diamond (a \diamond b)= b^{-1} \diamond a^{-1} \diamond(a \diamond b)$\\
+	$\Leftrightarrow (a \diamond b)^{-1} \diamond (a \diamond b)= (b^{-1} \diamond (a^{-1} \diamond a)) \diamond b$ \hspace{10mm} (Assoziativität von G)\\
+	$\Leftrightarrow (a \diamond b)^{-1} \diamond (a \diamond b)= (b^{-1} \diamond e) \diamond b$\\
+	$\Leftrightarrow (a \diamond b)^{-1} \diamond (a \diamond b)= b^{-1} \diamond b$\\
+	$\Leftrightarrow (a \diamond b)^{-1} \diamond (a \diamond b)= e$\\
+	$\Leftrightarrow e= e$\\
+	
+	Also gilt die Behauptung $\forall a,b \in S$ gilt $ (a \diamond b)^{-1} = b^{-1} \diamond a^{-1}$
+	\hfill$\Box$\\
+	
+	\subsection*{b)}
+	\textbf{Behauptung:} $\forall a,b \in S$ gilt $ (a \diamond b)^{-1} = a^{-1} \diamond b^{-1}$\\
+	
+	\textbf{Wiederlegung:}\\
+	$ (a \diamond b)^{-1} = a^{-1} \diamond b^{-1}$  (Teilaufgabe a))\\
+	$\Leftrightarrow b^{-1} \diamond a^{-1} = a^{-1} \diamond b^{-1}$\\
+	
+	Dies stimmt nicht, da die Eigenschaft $\forall x, y \in S: x \diamond y = y \diamond x$ nur in abelschen Gruppen gilt.
+	\hfill$\Box$\\
+		
+	\subsection*{b)}
+	\textbf{Behauptung:} Falls $\forall a \in S: a \diamond a = e $, dann ist G abelsch.\\
+	
+	\textbf{Beweis:}\\
+	In abelschen Gruppen gilt die Kommutativität, d.h.: $\forall a, b \in S: a \diamond b = b \diamond a$\\
+	
+	Zu zeigen: $\forall a, b \in S: a \diamond b = b \diamond a$\\
+	
+	$a \diamond b = b \diamond a$\\
+	$\Leftrightarrow a \diamond b \diamond a \diamond b = b \diamond a\diamond a \diamond b$ \hspace{10mm}(Assoziativität von G)\\
+	$\Leftrightarrow (a \diamond b) \diamond (a \diamond b) = (b \diamond (a\diamond a)) \diamond b$  \\
+	$\Leftrightarrow e = (b \diamond e) \diamond b$  \\
+	$\Leftrightarrow e = b \diamond b$  \\
+	$\Leftrightarrow e = e$\\
+	
+	Also gilt die $\forall a, b \in S: a \diamond b = b \diamond a$. Damit gilt auch die Behauptung und G ist abelsch.
+		\hfill$\Box$\\
+	
+	
+	
+
 	
 	
 \end{document}
