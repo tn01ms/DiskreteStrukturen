@@ -156,7 +156,51 @@
 	Also gilt die $\forall a, b \in S: a \diamond b = b \diamond a$. Damit gilt auch die Behauptung und G ist abelsch.
 		\hfill$\Box$\\
 	
-	\section*{Aufgabe 20}
+\section*{Aufgabe 19}
+Sei S eine Menge und $\diamond: S \times S \to S$. Für die Algebra $(S, \diamond)$ sind folgende Bedingungen erfüllt:\\
+
+1. Assoziativität: $\forall x, y,z \in S: (x \diamond y) \diamond z = x \diamond (y \diamond z)$\\
+2. Linksneutrales Element: es gibt $e \in S$ mit $\forall x \in S: e \diamond x = x$\\
+3. Linksinverses Element: $\forall x \in S: \exists y \in S: y\diamond x = e$\\
+
+Zeigen Sie wie folgt, dass $(S, \diamond)$ eine Gruppe ist:
+
+\subsection*{a)}
+Seien $x,y,z \in S$. Angenommen, es gilt $y \diamond x = e $ und  $z \diamond y = e$\\
+Zu zeigen: $x \diamond y = (z \diamond y) \diamond (x \diamond y)$\\
+
+Beweis:\\
+$x \diamond y = (z \diamond y) \diamond (x \diamond y)$\\
+$\Leftrightarrow x \diamond y = e \diamond (x \diamond y)$ \hspace{10mm} (Bedingung 2 ) \\
+$\Leftrightarrow x \diamond y = x \diamond y$	\hfill$\Box$\\
+
+\subsection*{b)}
+Zu zeigen: $x \diamond y = e$ (d.h. jedes linksinverse Element der Gruppe ist auch rechtsinvers).\\
+
+Beweis:\\
+$x \diamond y = e$ \hspace{10mm} (Aussage a)\\
+$\Leftrightarrow (z \diamond y) \diamond (x \diamond y) = e$ \hspace{10mm} (Assoziativität)\\
+$\Leftrightarrow z \diamond ((y \diamond x) \diamond y) = e$ \hspace{10mm} (Annahme in a)\\
+$\Leftrightarrow z \diamond (e \diamond y) = e$ \hspace{10mm} (Bedingung 3)\\
+$\Leftrightarrow z \diamond y = e$ \hspace{10mm} (Annahme in a)\\
+$\Leftrightarrow e = e$\hfill$\Box$\\
+
+\subsection*{c)}
+Zu Zeigen: $x \diamond e = x$ (d.h. jedes linksneutrale Element der Gruppe ist auch rechtsneutral)\\
+
+Beweis:\\
+$x \diamond e = x$\\ \hspace{10mm} (Annahme in a)\\
+$\Leftrightarrow x \diamond (y \diamond x ) = x$ \hspace{10mm} (Assoziativität)\\ 
+$\Leftrightarrow (x \diamond y) \diamond x  = x$ \hspace{10mm} (Aussage b)\\ 
+$\Leftrightarrow e \diamond x  = x$ \hspace{10mm} (Bedingung 2))\\ 
+$\Leftrightarrow x  = x$ \hfill$\Box$\\
+
+Da nun jedes linksinverse Element auch rechtsinvers und jedes linksneutrale Element auch rechtsneutral ist und die Assoziativität in Bedingung 1 gegeben ist, handelt es sich bei $(S, \diamond)$ um eine Gruppe.\hfill$\Box$\\
+
+
+	
+	
+\section*{Aufgabe 20}
 Zeigen Sie, dass jede Teilmenge B einer abzählbaren, d.h. endlich oder abzählbar unendlichen, Menge A ebenfalls abzählbar ist.
 \textbf{Beweis:}
 \begin{itemize}
@@ -173,7 +217,8 @@ Falls B nun nicht endlich:\\
 Da A abzählbar unendlich und $B \subseteq A$  folgt, dass B unendlich und maximal gleich A sein kann.\\
  Sei $b_i \in B$ def. als das kleinste Element von B, dann bilden wir das erste Element von den natürlichen Zahlen $n_i \in \mathbb{N}_{0}$ auf dieses $b_i$ ab. Für das nächste Element aus B, $b_{i+1}$ nehmen wir den Nachfolger aus $\mathbb{N}_{0}\; n_{i+1}$.\\\\
  Diese Abbildung $f: \mathbb{N} \rightarrow B$ ist bijektiv weil:\\
- Das Abzählen eine Menge ist Injektiv und Surjektiv , also bijektiv weil sich der wert der Definitionsmenge immer um eins erhöht und gleichzeitig auch der Wert der Wertemenge was bedeutet das 1. nicht 2 Elemente aus der Definitionsmenge auf dasselbe aus der Wertemenge zeigen können, und 2. das jedes Element aus der Wertemenge getroffen wird. 
+ Das Abzählen eine Menge ist Injektiv und Surjektiv (und damit auch Bijektiv), weil sich der Wert der Definitionsmenge immer um eins erhöht und gleichzeitig auch der Wert der Wertemenge was bedeutet, dass:\\ 1. nicht 2 Elemente aus der Definitionsmenge auf dasselbe aus der Wertemenge zeigen können\\
+ 2. das jedes Element aus der Wertemenge getroffen wird. 
  
 	
 
