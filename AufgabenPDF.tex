@@ -73,7 +73,53 @@
 	\maketitle
 	\hrulefill
 	
-	\section*{Aufgabe 25}
+	\section*{Aufgabe 22}
+	
+	\subsection*{a)}
+	In einem Online-Getränkemarkt stehen acht Mate-Sorten zum Verkauf. Wie viele Möglichkeiten gibt es elf Kisten mit Mate zu bestellen? Welches Urnenmodell wird für die Modellierung verwendet? (Eine Kiste enthält immer genau eine Mate-Sorte und von jeder Sorte stehen genügend viele Kisten zur Verfügung.)\\
+	
+	Urnenmodell: k-Auswahl\\
+	
+	Kisten können mehrfach bestellt werden: $\Rightarrow$ Mit Zurücklegen\\
+	Reihenfolge spielt keine Rolle\\
+	
+	$\Rightarrow \binom{n-1+k}{k}= \binom{8-1+11}{11} = 31824$ Möglichkeiten
+	
+	
+	
+	\subsection*{b)}
+	Jeder Flughafen hat einen dreibuchstabigen internationalen Code, der ihn eindeutig identifiziert (z.B.FRA für Frankfurt, DUS für Düsseldorf). Wie viele Kombinationen aus drei Großbuchstaben gibt es insgesamt (Umlaute ausgeschlossen)? Welches Urnenmodell wird für die Modellierung verwendet?\\
+	
+	Urnenmodell: k-Stichprobe\\
+	
+	Buchstaben können mehrfach verwendet werden: $\Rightarrow$ Mit Zurücklegen\\
+	Reihenfolge spielt eine Rolle\\
+	
+	$\Rightarrow n^k = 26^3 =17576$ Möglichkeiten
+	
+	\subsection*{c)}
+	Auf wie viele verschiedene Arten kann man sieben Hotelgäste in zwölf verschiedenen freien Einzelzimmern unterbringen? Welches Urnenmodell wird für die Modellierung verwendet? \\
+	
+	Urnenmodell: k-Kombinationen\\
+	
+	Einzelzimmer: $\Rightarrow$ Ohne Zurücklegen\\
+	Reihenfolge ohne Bedeutung\\
+	
+	$\Rightarrow \binom{n}{k} = \binom{12}{7} = 792$ Möglichkeiten
+	
+	
+	
+	
+	\section*{Aufgabe 23}
+	Zehn Briefe sollen in zehn Briefumschläge gesteckt werden, wobei es für jeden Brief genau einen zu gehörigen Umschlag gibt. Wie viele Möglichkeiten gibt es jeden Brief in einen falschen Umschlag zu stecken?\\
+	
+	Für die Lösung brauchen wir die Anzahl der fixpunktfreien Permutationen von 10. (siehe Skript 6.36)\\
+	
+	
+	$\Rightarrow D_{10} = n! \cdot (1- \sum\limits_{r = 1}^{10} (-1)^{r-1}\cdot \frac{1}{r!}) = 1334961$ Möglichkeiten
+	
+	
+	\section*{Aufgabe 24}
 	
 	Bestimmen Sie die Anzahl der durch 2, 3 oder 5 teilbaren natürlichen Zahlen (einschließlich Null) kleiner gleich 100.\\
 	
