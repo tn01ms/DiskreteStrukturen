@@ -72,4 +72,25 @@
 \begin{document}
 	\maketitle
 	\hrulefill
+	
+	\section*{Aufgabe 25}
+	
+	Bestimmen Sie die Anzahl der durch 2, 3 oder 5 teilbaren natürlichen Zahlen (einschließlich Null) kleiner gleich 100.\\
+	
+	Es gibt offensichtlich $\frac{100}{2} = 50$ verschiedene Zahlen von 1 bis 100, die durch 2 teilbar sind.
+	Dasselbe kann man auch für $\frac{100}{3}$ betrachten. Da hier allerdings eine Kommazahl herauskommt, kann man hier die Floor-Funktion zu Hilfe nehmen: \\
+	$\Rightarrow$ es gibt $floor(\frac{100}{3}) = 33$ verschiedene Zahlen von 1 bis 100, die durch 3 teilbar sind.\\
+	Dasselbe gilt auch für die 5.\\
+	
+	$\Rightarrow floor(\frac{100}{2}) + floor(\frac{100}{3}) +  floor(\frac{100}{5}) = 103$\\
+	
+	Dies sind offensichtlich zu viele Zahlen, da manche Zahlen doppelt auftauchen. Z.B ist die 6 sowohl in den durch 2, als auch in den durch 3 teilbaren Zahlen enthalten. Diese Zahlen müssen wir entsprechend abziehen (6 = 3*2, 10 = 5*2, 15 = 5*3):\\
+	
+	$\Rightarrow floor(\frac{100}{2}) + floor(\frac{100}{3}) +  floor(\frac{100}{5}) - floor(\frac{100}{6}) - floor(\frac{100}{10}) - floor(\frac{100}{15})= 71$\\
+	
+	Hierzu müssen wir wiederum die Zahlen addieren, die wir nun doppelt abgezogen haben (alle Zahlen die durch 2*3*5 = 30 teilbar sind). Außerdem müssen wir die Null addieren (+1):\\
+	
+		$floor(\frac{100}{2}) + floor(\frac{100}{3}) +  floor(\frac{100}{5})$\\$ - floor(\frac{100}{6}) - floor(\frac{100}{10}) - floor(\frac{100}{15}) + floor(\frac{100}{30}) + 1 = 75$\\
+	
+	$\Rightarrow$ Also gibt es 75 Zahlen von 0 bis 100, die durch 2,3 oder 5 teilbar sind.
 \end{document}
